@@ -28,20 +28,20 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Services</h4>
               <ul>
-                <li><a href="#">Brand Identity</a></li>
-                <li><a href="#">Art Direction</a></li>
-                <li><a href="#">Visual Design</a></li>
-                <li><a href="#">Packaging</a></li>
+                <li><a href="/">Brand Identity</a></li>
+                <li><a href="/">Art Direction</a></li>
+                <li><a href="/">Visual Design</a></li>
+                <li><a href="/">Packaging</a></li>
               </ul>
             </div>
 
             <div className="footer-column">
               <h4>Connect</h4>
               <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                <li><a href="/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+                <li><a href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="/" target="_blank" rel="noopener noreferrer">Behance</a></li>
               </ul>
             </div>
           </div>

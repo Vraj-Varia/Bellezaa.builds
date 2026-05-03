@@ -29,27 +29,6 @@ const About = () => {
     { category: 'Business Growth Systems', items: ['Lead generation', 'Conversion improvement', 'Process optimization'] },
   ];
 
-  const experience = [
-    {
-      period: '2021 — Present',
-      title: 'Creative Director',
-      company: 'Bellezaa Studio',
-      description: 'Leading creative strategy and design for luxury beauty and lifestyle brands worldwide.',
-    },
-    {
-      period: '2018 — 2021',
-      title: 'Senior Designer',
-      company: 'Maison Creative',
-      description: 'Crafted visual identities and art direction for high-end cosmetics and wellness brands.',
-    },
-    {
-      period: '2015 — 2018',
-      title: 'Visual Designer',
-      company: 'Luxe Agency',
-      description: 'Developed brand systems and marketing materials for premium lifestyle clients.',
-    },
-  ];
-
   return (
     <div style={{ paddingTop: '120px' }}>
       {/* Hero */}
