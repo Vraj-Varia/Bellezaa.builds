@@ -8,6 +8,7 @@ const Contact = () => {
     message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [revealed, setRevealed] = useState([]);
 
   useEffect(() => {
@@ -35,13 +36,16 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const onFormSubmit = (e) => {
     e.preventDefault();
+    setSubmitting(true);
     setIsSubmitted(true);
+    // Simulate API call
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({ name: '', email: '', project: '', message: '' });
-    }, 3000);
+      setSubmitting(false);
+    }, 2000);
   };
 
   const contactInfo = [
@@ -132,7 +136,7 @@ const Contact = () => {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit}>
+                  <form onSubmit={onFormSubmit}>
                     <div style={{ marginBottom: 'var(--space-6)' }}>
                       <label style={{ display: 'block', fontSize: 'var(--text-xs)', color: 'var(--text-muted)', marginBottom: 'var(--space-2)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                         Name
@@ -159,6 +163,7 @@ const Contact = () => {
                         onFocus={(e) => e.target.style.borderColor = 'var(--accent-sage)'}
                         onBlur={(e) => e.target.style.borderColor = 'var(--border-primary)'}
                       />
+
                     </div>
 
                     <div style={{ marginBottom: 'var(--space-6)' }}>
@@ -187,6 +192,7 @@ const Contact = () => {
                         onFocus={(e) => e.target.style.borderColor = 'var(--accent-sage)'}
                         onBlur={(e) => e.target.style.borderColor = 'var(--border-primary)'}
                       />
+
                     </div>
 
                     <div style={{ marginBottom: 'var(--space-6)' }}>
@@ -215,6 +221,7 @@ const Contact = () => {
                         onFocus={(e) => e.target.style.borderColor = 'var(--accent-sage)'}
                         onBlur={(e) => e.target.style.borderColor = 'var(--border-primary)'}
                       />
+
                     </div>
 
                     <div style={{ marginBottom: 'var(--space-8)' }}>
@@ -244,10 +251,12 @@ const Contact = () => {
                         onFocus={(e) => e.target.style.borderColor = 'var(--accent-sage)'}
                         onBlur={(e) => e.target.style.borderColor = 'var(--border-primary)'}
                       />
+
                     </div>
 
                     <button
                       type="submit"
+                      disabled={submitting}
                       style={{
                         display: 'inline-flex',
                         alignItems: 'center',
