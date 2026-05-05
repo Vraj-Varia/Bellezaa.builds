@@ -345,17 +345,17 @@ p {
    ======================================== */
 .navigation {
   position: fixed;
-  top: 15px;
+  /* top: 15px; */
   left: 0px;
   right: 0px;
   z-index: 100;
-  width: 75%;
+  /* width: 75%; */
   margin: 0 auto;
   padding: var(--space-6) 0;
   background: rgba(234, 230, 221, 0.3);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  border-radius: 20px;
+  /* border-radius: 20px; */
   border: 1px solid rgba(43, 43, 43, 0.15);
 }
 
