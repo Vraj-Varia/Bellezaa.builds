@@ -106,7 +106,7 @@ const Home = () => {
             <p className="hero-subtitle">
               Helping startups and businesses generate consistent leads, automate workflows, and scale faster — without wasting time on designs that don’t convert.
             </p>
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1rem' }} className='mobile-hero-section'>
               <Link to="/projects" className="btn-pill">
                 <span>View Case Studies</span>
                 <span>→</span>
