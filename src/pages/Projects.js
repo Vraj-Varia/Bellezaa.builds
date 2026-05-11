@@ -26,11 +26,11 @@ const Projects = () => {
 
   const projects = [
     { id: 1, title: 'Lumière Beauty', category: 'Brand Identity', year: '2024', type: 'Beauty', problem: 'Low website inquiries and poor conversion', solution: 'Designed a clean, high-converting landing page with optimized user flow and integrated lead capture system', result: '+85% increase in leads within 30 days' },
-    { id: 2, title: 'Botanica Wellness', category: 'Art Direction', year: '2024', type: 'Wellness' , problem: 'Manual customer handling and missed leads due to slow response time', solution: 'Implemented AI chatbot for instant responses and automated booking system', result: 'Reduced response time by 70% and increased customer engagement significantly' },
-    { id: 3, title: 'Rose Beauty Co.', category: 'Visual Design', year: '2023', type: 'Beauty' , problem: 'High traffic but very low conversion rate', solution: 'Redesigned website structure with better CTA placement and conversion-focused UI', result: '2x improvement in conversion rate' },
-    { id: 4, title: 'Sage Lifestyle', category: 'Brand Identity', year: '2023', type: 'Lifestyle' , problem: 'Unclear brand messaging leading to weak customer trust', solution: 'Repositioned website content with clear value proposition and structured layout', result: 'Improved user retention and increased time spent on site by 60%' },
-    { id: 5, title: 'Velvet Cosmetics', category: 'Packaging', year: '2023', type: 'Beauty' , problem: 'No proper lead capture system on website', solution: 'Built landing page funnel with lead forms and automated follow-up system', result: 'Consistent daily inquiries and improved lead quality' },
-    { id: 6, title: 'Harmony Spa', category: 'Art Direction', year: '2022', type: 'Wellness' , problem: 'Dependence on manual bookings and no automation', solution: 'Integrated AI-based booking assistant and automated scheduling system', result: 'Saved 10+ hours per week and increased booking efficiency' },
+    { id: 2, title: 'Botanica Wellness', category: 'Art Direction', year: '2024', type: 'Wellness', problem: 'Manual customer handling and missed leads due to slow response time', solution: 'Implemented AI chatbot for instant responses and automated booking system', result: 'Reduced response time by 70% and increased customer engagement significantly' },
+    { id: 3, title: 'Rose Beauty Co.', category: 'Visual Design', year: '2023', type: 'Beauty', problem: 'High traffic but very low conversion rate', solution: 'Redesigned website structure with better CTA placement and conversion-focused UI', result: '2x improvement in conversion rate' },
+    { id: 4, title: 'Sage Lifestyle', category: 'Brand Identity', year: '2023', type: 'Lifestyle', problem: 'Unclear brand messaging leading to weak customer trust', solution: 'Repositioned website content with clear value proposition and structured layout', result: 'Improved user retention and increased time spent on site by 60%' },
+    { id: 5, title: 'Velvet Cosmetics', category: 'Packaging', year: '2023', type: 'Beauty', problem: 'No proper lead capture system on website', solution: 'Built landing page funnel with lead forms and automated follow-up system', result: 'Consistent daily inquiries and improved lead quality' },
+    { id: 6, title: 'Harmony Spa', category: 'Art Direction', year: '2022', type: 'Wellness', problem: 'Dependence on manual bookings and no automation', solution: 'Integrated AI-based booking assistant and automated scheduling system', result: 'Saved 10+ hours per week and increased booking efficiency' },
   ];
 
   const filters = ['All', 'Brand Identity', 'Art Direction', 'Visual Design', 'Packaging'];
@@ -47,8 +47,8 @@ const Projects = () => {
           <div className={`section-header reveal ${revealed.includes(0) ? 'active' : ''}`}>
             <p className="section-label">Portfolio</p>
             <h1 className="editorial-headline">
-              Projects that generated<br /> 
-	      <em>real business results</em>
+              Projects that generated<br />
+              <em>real business results</em>
             </h1>
             <p className="section-description">
               A collection of websites and AI systems designed to increase leads, improve conversions, and automate growth.
@@ -110,15 +110,15 @@ const Projects = () => {
                     {project.category} — {project.year}
                   </p>
                   <h3>{project.title}</h3>
-		  <hr />
-		  &nbsp;
-		  <h5>{project.problem}</h5>
-		  &nbsp;
-		  <h5>{project.solution}</h5>
-		  &nbsp;
-		  <h5>{project.result}</h5>
-		  &nbsp;
-		<p><em>{project.type}</em></p>
+                  <hr />
+                  &nbsp;
+                  <h5>{project.problem}</h5>
+                  &nbsp;
+                  <h5>{project.solution}</h5>
+                  &nbsp;
+                  <h5>{project.result}</h5>
+                  &nbsp;
+                  <p><em>{project.type}</em></p>
                 </div>
               </div>
             ))}
@@ -134,8 +134,8 @@ const Projects = () => {
             <h2 className="section-title" style={{ marginBottom: 'var(--space-8)' }}>
               Want <em>similar</em> results for your <em>business</em>?
             </h2>
-	    <p>I’ll review your website and show you how to increase leads — for free.</p>
-            <a href="mailto:hello@bellezaa.com" className="btn-pill">
+            <p>I’ll review your website and show you how to increase leads — for free.</p>
+            <a href="mailto:bellezaa.builds@gmail.com" className="btn-pill">
               <span>Get Free Website Audit</span>
               <span>→</span>
             </a>
