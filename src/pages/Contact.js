@@ -51,7 +51,7 @@ const Contact = () => {
   const contactInfo = [
     { label: 'Email', value: 'vrajvaria10@gmail.com' },
     { label: 'Location', value: 'Vadodara, Gujarat, India' },
-    { label: 'Contact', value: '+91 - 87801 92237' },
+    { label: 'Contact', value: '+91 - 87801 92237' }, 
     { label: 'Response', value: '48-72 hours' },
   ];
 
